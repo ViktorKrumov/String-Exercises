@@ -1,0 +1,23 @@
+using System;
+using System.Text;
+
+namespace Stringosvane
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] input = Console.ReadLine().Split(".");
+            string filter = Console.ReadLine();
+
+            foreach (var item in input)
+            {
+                if (item.Contains(filter))
+                {
+                    Console.WriteLine(item);
+                }
+            }
+
+        }
+    }
+}
