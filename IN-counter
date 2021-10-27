@@ -1,0 +1,24 @@
+using System;
+using System.Text;
+
+namespace Stringosvane
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] input = Console.ReadLine().Split(' ');
+                int counter1 = 0;
+            foreach (var item in input)
+            {
+
+                if (item.Contains("in") || item.Contains("In"))
+                {
+                    counter1++;
+                }
+            }
+
+            Console.WriteLine(counter1);
+        }
+    }
+}
