@@ -1,0 +1,35 @@
+using System;
+using System.Text;
+
+namespace Stringosvane
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            int counter = 0;
+            for (int i = 0; i <= input.Length - 1; i++)
+            {
+
+                if (input[i] == '(')
+            {
+                    counter++;
+                }
+
+                if (input[i] == ')')
+                {
+                    counter--;
+                }
+            }
+            if (counter == 0)
+            {
+                Console.WriteLine("Correct");
+            }
+            else
+            {
+                Console.WriteLine("Incorrect");
+            }
+        }
+    }
+}
